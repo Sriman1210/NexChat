@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | NexChat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <p class="brand-kicker">NexChat</p>
+    <h1>Create Account</h1>
+    <p class="subtle">Usernames should contain lowercase letters and numbers only.</p>
+
+    <form id="signupForm" class="form-stack" novalidate>
+      <input type="text" id="username" placeholder="Username" required autocomplete="username">
+      <input type="email" id="email" placeholder="Email" required autocomplete="email">
+      <input type="password" id="password" placeholder="Password" required autocomplete="new-password">
+      <button type="submit">Signup</button>
+    </form>
+
+    <p class="inline-link">
+      Already have an account? <a href="login.html">Login</a>
+    </p>
+
+    <p id="authNotice" class="notice" aria-live="polite"></p>
+  </main>
+
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

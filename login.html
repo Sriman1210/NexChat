@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | NexChat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <p class="brand-kicker">NexChat</p>
+    <h1>Sign In</h1>
+    <p class="subtle">Continue your conversations in NexChat.</p>
+
+    <form id="loginForm" class="form-stack" novalidate>
+      <input type="email" id="email" placeholder="Email" required autocomplete="email">
+      <input type="password" id="password" placeholder="Password" required autocomplete="current-password">
+      <button type="submit">Login</button>
+    </form>
+
+    <p class="inline-link">
+      New here? <a href="signup.html">Create an account</a>
+    </p>
+
+    <p id="authNotice" class="notice" aria-live="polite"></p>
+  </main>
+
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexChat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="chat-page">
+    <header class="top-bar">
+      <div class="brand-inline">
+        <span class="brand-logo">N</span>
+        <h1>NexChat</h1>
+      </div>
+      <div class="top-actions">
+        <a class="link-btn" href="settings.html">Settings</a>
+        <button id="logoutBtn" class="btn-danger" type="button">Logout</button>
+      </div>
+    </header>
+
+    <main class="chat-layout">
+      <aside class="sidebar">
+        <section class="card">
+          <h2>Find People</h2>
+          <div class="inline-form">
+            <input type="text" id="searchUser" placeholder="Enter username">
+            <button id="searchBtn" type="button">Search</button>
+          </div>
+          <div id="searchResult" class="list-block search-results"></div>
+        </section>
+
+        <section class="card">
+          <h2>Friend Requests</h2>
+          <div id="friendRequests" class="list-block"></div>
+        </section>
+
+        <section class="card">
+          <h2>Friends</h2>
+          <div id="friendsList" class="list-block"></div>
+        </section>
+      </aside>
+
+      <section class="chat-panel panel">
+        <div class="chat-header">
+          <h2 id="chatUser">Select a friend to chat</h2>
+          <p id="chatStatus"></p>
+        </div>
+
+        <div id="chatMessages" class="messages"></div>
+
+        <form id="messageForm" class="message-form">
+          <input type="text" id="messageInput" placeholder="Type message">
+          <button type="submit">Send</button>
+        </form>
+
+        <form id="fileForm" class="file-form">
+          <input type="file" id="fileInput">
+          <button type="submit">Upload</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="js/chat.js"></script>
+</body>
+</html>

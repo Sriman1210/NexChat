@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | NexChat</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="settings-shell">
+    <header class="settings-header">
+      <div>
+        <p class="brand-kicker">NexChat</p>
+        <h1>Settings</h1>
+        <p class="subtle">Manage your profile and account.</p>
+      </div>
+      <a class="link-btn" href="chat.html">Back to NexChat</a>
+    </header>
+
+    <main class="settings-grid">
+      <section class="card">
+        <h2>Profile</h2>
+        <img id="avatarPreview" class="avatar-preview" alt="Avatar preview">
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="username">
+        <button id="saveUsernameBtn" type="button">Save Username</button>
+      </section>
+
+      <section class="card">
+        <h2>Avatar</h2>
+        <label for="avatarInput">Upload image</label>
+        <input id="avatarInput" type="file" accept="image/*">
+        <button id="uploadAvatarBtn" type="button">Upload Avatar</button>
+        <button id="logoutBtn" class="btn-danger" type="button">Logout</button>
+      </section>
+    </main>
+
+    <p id="settingsNotice" class="notice" aria-live="polite"></p>
+  </div>
+
+  <script type="module" src="js/settings.js"></script>
+</body>
+</html>
